@@ -4,6 +4,7 @@ import Head from "next/head";
 import metadata from "@/data/metadata";
 
 import Header from "./Header";
+import Footer from "./Footer";
 
 interface Props {
   children: ReactNode;
@@ -16,7 +17,8 @@ const Layout = ({ children }: Props) => {
         <title>{metadata.title}</title>
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className="max-w-screen-md m-auto">{children}</main>
+      <Footer />
     </>
   );
 };
