@@ -2,7 +2,7 @@ import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <header>
+    <header className="mb-5">
       <Nav />
     </header>
   );
