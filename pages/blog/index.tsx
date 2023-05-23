@@ -1,18 +1,15 @@
-import Profile from "@/components/Profile";
 import { allPosts } from "@/.contentlayer/generated";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 
+import Search from "@/components/Search";
 import PostList from "@/components/PostList";
 
-const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <>
-      <Profile />
-      <section className="my-10">
-        <h1 className="text-3xl mb-5">📝 Recent Posts</h1>
-        <PostList posts={posts} />
-      </section>
-    </>
+    <section>
+      <Search />
+      <PostList posts={posts} />
+    </section>
   );
 };
 
@@ -21,9 +18,9 @@ export const getStaticProps: GetStaticProps = () => {
 
   return {
     props: {
-      posts: posts.slice(0, 5),
+      posts,
     },
   };
 };
 
-export default Home;
+export default Blog;
