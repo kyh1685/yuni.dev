@@ -1,14 +1,21 @@
-import { allPosts } from "@/.contentlayer/generated";
+import { allPosts, Post } from "@/.contentlayer/generated";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { ChangeEvent, useState } from "react";
 
 import Search from "@/components/Search";
 import PostList from "@/components/PostList";
 
 const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const [search, setSearch] = useState("");
+
+  const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    setSearch(() => e.target.value.toLowerCase());
+  };
+
   return (
     <section>
-      <Search />
-      <PostList posts={posts} />
+      <Search onChange={handleSearch} />
+      <PostList posts={posts.filter((post: Post) => post.title.toLowerCase().includes(search))} />
     </section>
   );
 };
