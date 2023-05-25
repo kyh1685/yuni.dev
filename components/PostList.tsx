@@ -7,7 +7,7 @@ interface Props {
 
 const PostList = ({ posts }: Props) => {
   return (
-    <div className="flex flex-col gap-10 my-10">
+    <div className="flex flex-col gap-10 my7">
       {posts.map((post: Post) => (
         <BlogPost
           title={post.title}
