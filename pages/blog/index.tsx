@@ -13,7 +13,7 @@ const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   };
 
   return (
-    <section>
+    <section className="w-full">
       <Search onChange={handleSearch} />
       <PostList posts={posts.filter((post: Post) => post.title.toLowerCase().includes(search))} />
     </section>

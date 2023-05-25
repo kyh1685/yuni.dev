@@ -8,8 +8,8 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Profile />
-      <section className="my-10">
-        <h1 className="text-3xl mb-5">📝 Recent Posts</h1>
+      <section className="my-14">
+        <h1 className="font-medium sm:text-3xl text-2xl mb-5">📝 Recent Posts</h1>
         <PostList posts={posts} />
       </section>
     </>
