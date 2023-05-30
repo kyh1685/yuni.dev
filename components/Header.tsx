@@ -2,7 +2,7 @@ import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <header className="py-8 max-sm:py-5 mb-3">
+    <header className="w-full fixed top-0 left-0 bg-white px-7">
       <Nav />
     </header>
   );
