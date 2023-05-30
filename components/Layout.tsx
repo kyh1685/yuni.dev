@@ -16,9 +16,11 @@ const Layout = ({ children }: Props) => {
       <Head>
         <title>{metadata.title}</title>
       </Head>
-      <main className="flex flex-col min-h-screen px-7">
+      <main className="flex flex-col min-h-screen px-7 mt-20">
         <Header />
-        <section className="w-full max-w-screen-md m-auto grow max-sm:flex flex-col items-center">{children}</section>
+        <section className="w-full max-w-screen-md m-auto grow max-sm:flex flex-col items-center pt-5">
+          {children}
+        </section>
         <Footer />
       </main>
     </>
