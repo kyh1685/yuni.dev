@@ -1,15 +1,20 @@
 import { allPosts } from "@/.contentlayer/generated";
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
+
+import CustomHead from "@/components/CustomHead";
 
 const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const MDXComponent = useMDXComponent(post.body.code);
 
   return (
-    <div className="mb-20 prose">
-      <h1>{post.title}</h1>
-      <MDXComponent />
-    </div>
+    <>
+      <CustomHead type="post" post={post} />
+      <div className="mb-20 prose">
+        <h1>{post.title}</h1>
+        <MDXComponent />
+      </div>
+    </>
   );
 };
 

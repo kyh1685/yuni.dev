@@ -2,6 +2,7 @@ import { allPosts, Post } from "@/.contentlayer/generated";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { ChangeEvent, useState } from "react";
 
+import CustomHead from "@/components/CustomHead";
 import Search from "@/components/Search";
 import PostList from "@/components/PostList";
 
@@ -13,10 +14,13 @@ const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   };
 
   return (
-    <section className="w-full">
-      <Search onChange={handleSearch} />
-      <PostList posts={posts.filter((post: Post) => post.title.toLowerCase().includes(search))} />
-    </section>
+    <>
+      <CustomHead type="blog" />
+      <section className="w-full">
+        <Search onChange={handleSearch} />
+        <PostList posts={posts.filter((post: Post) => post.title.toLowerCase().includes(search))} />
+      </section>
+    </>
   );
 };
 
