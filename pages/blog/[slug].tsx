@@ -10,7 +10,7 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <CustomHead type="post" post={post} />
-      <div className="mb-20 prose">
+      <div className="mb-20 prose dark:prose-invert">
         <h1>{post.title}</h1>
         <MDXComponent />
       </div>
