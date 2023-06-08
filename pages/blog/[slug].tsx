@@ -3,6 +3,7 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
 
 import CustomHead from "@/components/CustomHead";
+import Tags from "@/components/Tags";
 
 const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const MDXComponent = useMDXComponent(post.body.code);
@@ -10,10 +11,11 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <CustomHead type="post" post={post} />
-      <div className="mb-20 prose dark:prose-invert">
+      <div className="mb-16 prose dark:prose-invert">
         <h1>{post.title}</h1>
         <MDXComponent />
       </div>
+      <Tags tags={post.tags} />
     </>
   );
 };
