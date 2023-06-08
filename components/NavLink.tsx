@@ -10,7 +10,7 @@ const NavLink = ({ handleDropdownMenu }: Props) => {
     <>
       {nav.map((data) => (
         <Link
-          className="sm:mr-5 font-medium text-lg"
+          className="font-medium text-lg px-4 py-2 hover:bg-[#ededed] dark:hover:bg-[#262626] rounded-md"
           href={data.link}
           key={data.title}
           onClick={handleDropdownMenu || undefined}

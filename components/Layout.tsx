@@ -10,13 +10,11 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <main className="flex flex-col min-h-screen px-7 mt-20">
-        <Header />
-        <section className="w-full max-w-screen-md m-auto grow max-sm:flex flex-col items-center pt-5">
-          {children}
-        </section>
-        <Footer />
+      <Header />
+      <main className="min-h-screen bg-[#fafafa] text-[#16181a] dark:bg-[#16181a] dark:text-[#ecedee] transition duration-500">
+        <section className="max-w-screen-md m-auto p-7">{children}</section>
       </main>
+      <Footer />
     </>
   );
 };

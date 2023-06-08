@@ -11,7 +11,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
       <CustomHead type="home" />
       <Profile />
       <section className="my-14">
-        <h1 className="font-medium sm:text-3xl text-2xl mb-5">📝 Recent Posts</h1>
+        <h1 className="font-bold sm:text-3xl text-2xl mb-5">Recent Posts</h1>
         <PostList posts={posts} />
       </section>
     </>
