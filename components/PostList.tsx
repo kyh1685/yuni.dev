@@ -14,6 +14,7 @@ const PostList = ({ posts }: Props) => {
           description={post.description}
           date={post.date}
           slug={post._raw.flattenedPath}
+          tags={post.tags}
           key={post._id}
         />
       ))}
