@@ -6,7 +6,7 @@ interface Props {
 
 const Search = ({ onChange }: Props) => {
   return (
-    <div className="flex p-5 max-sm:p-3 mb-7 border-[#16181a] dark:border-[#fafafa] border-2 rounded-lg">
+    <div className="flex p-5 max-sm:p-3 mb-16 border-[#16181a] dark:border-[#fafafa] border-2 rounded-lg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 513.749 513.749"
