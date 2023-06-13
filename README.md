@@ -2,8 +2,8 @@
 > Next.js, TypeScript, Tailwindcss 기반의 정적 블로그입니다.
 > <br>
 
-<img src="https://github.com/kyh1685/yuni.dev/assets/62630941/79a09e62-0ee7-49e7-8132-dd430cafea3d" width="500px" />
-<img src="https://github.com/kyh1685/yuni.dev/assets/62630941/19115d9b-7479-4216-9a8e-31faf499faf0" width="500px" />
+<img src="https://github.com/kyh1685/yuni.dev/assets/62630941/79a09e62-0ee7-49e7-8132-dd430cafea3d" width="400px" />
+<img src="https://github.com/kyh1685/yuni.dev/assets/62630941/19115d9b-7479-4216-9a8e-31faf499faf0" width="400px" />
 
 <br>
 <br>
