@@ -22,5 +22,5 @@ npm run start
 -
 
 ## 트러블 슈팅
-- [window 참조시 window is not defined 오류 발생](https://github.com/kyh1685/yuni.dev/issues/21)
+- [다크모드일 경우 새로고침하면 일시적으로 화면이 깜빡이는 문제](https://github.com/kyh1685/yuni.dev/issues/21)
 - [Vercel에서 자동 빌드 중 Contentlayer 오류 발생](https://github.com/kyh1685/yuni.dev/issues/14)
