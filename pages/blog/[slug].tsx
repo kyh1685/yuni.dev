@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPr
 
 import CustomHead from "@/components/CustomHead";
 import Tags from "@/components/Tags";
+import Utterances from "@/components/Utterances";
 
 const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const MDXComponent = useMDXComponent(post.body.code);
@@ -16,6 +17,7 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <MDXComponent />
       </div>
       <Tags tags={post.tags} />
+      <Utterances />
     </>
   );
 };
