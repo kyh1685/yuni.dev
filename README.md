@@ -37,6 +37,7 @@ npm run start
 - [x] Open Graph를 활용한 URL 미리보기 구현
 - [x] SEO 최적화를 위한 robots.txt와 sitemap 생성 및 검색 엔진 등록
 - [x] 모바일 및 테블릿과 같은 다양한 기기에 대응하는 반응형 구현
+- [x] Utterances를 활용한 댓글 구현
 - [x] Vercel을 사용하여 배포
 <br>
 
