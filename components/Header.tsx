@@ -17,8 +17,8 @@ const Header = () => {
           className="cursor-pointer p-2 hover:bg-[#ededed] dark:hover:bg-[#262626] rounded-md"
           onClick={themeModeHandle}
         >
-          <Image width={30} height={30} alt="라이트 모드로 변경" src="/images/dark.svg" className="hidden dark:block" />
-          <Image width={30} height={30} alt="다크 모드로 변경" src="/images/light.svg" className="dark:hidden" />
+          <Image width={30} height={30} alt="라이트 모드로 변경" src="/static/dark.svg" className="hidden dark:block" />
+          <Image width={30} height={30} alt="다크 모드로 변경" src="/static/light.svg" className="dark:hidden" />
         </button>
       </div>
     </header>

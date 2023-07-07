@@ -19,14 +19,14 @@ const CustomHead = ({ type, post }: Props) => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={`${post?.title} | Yuni.dev`} />
       <meta property="og:description" content={post?.description} />
-      <meta property="og:image" content={`${meta.url}/images/profile.jpg`} />
+      <meta property="og:image" content={`${meta.url}/static/profile.jpg`} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="yuni-dev.vercel.app" />
       <meta property="twitter:url" content={`${meta.url}/blog/${post?._raw.flattenedPath}`} />
       <meta name="twitter:title" content={`${post?.title} | Yuni.dev`} />
       <meta name="twitter:description" content={post?.description} />
-      <meta name="twitter:image" content={`${meta.url}/images/profile.jpg`} />
+      <meta name="twitter:image" content={`${meta.url}/static/profile.jpg`} />
     </Head>
   ) : (
     <Head>
@@ -38,14 +38,14 @@ const CustomHead = ({ type, post }: Props) => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={type === "home" ? meta.title : "Blog | Yuni.dev"} />
       <meta property="og:description" content={meta.description} />
-      <meta property="og:image" content={`${meta.url}/images/profile.jpg`} />
+      <meta property="og:image" content={`${meta.url}/static/profile.jpg`} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="yuni-dev.vercel.app" />
       <meta property="twitter:url" content={`${meta.url}${type === "blog" ? "/blog" : ""}`} />
       <meta name="twitter:title" content={type === "home" ? meta.title : "Blog | Yuni.dev"} />
       <meta name="twitter:description" content={meta.description} />
-      <meta name="twitter:image" content={`${meta.url}/images/profile.jpg`} />
+      <meta name="twitter:image" content={`${meta.url}/static/profile.jpg`} />
     </Head>
   );
 };
