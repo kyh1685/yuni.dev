@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body[data-theme="dark"] {
+  --bg-main: #16181a;
+  --bg-sub: #262626;
+  --tx-main: #ecedee;
+  --tx-sun: #9ba1a6;
+}
+
+body[data-theme="light"] {
+  --bg-main: #fafafa;
+  --bg-sub: #ededed;
+  --tx-main: #16181a;
+  /* --tx-main: #171717; */
+  --tx-sun: #404040;
+}
+
+.prose {
+  max-width: none;
+}
+
+.prose h2 {
+  font-size: 1.8em;
+}
+
+.prose h3 {
+  font-size: 1.5em;
+}
+
+.prose img {
+  margin-top: 0;
+}
+
+.prose li::marker {
+  color: #16181a;
+}
